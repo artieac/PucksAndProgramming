@@ -14,7 +14,6 @@
 		$http.get(urlRoot + '/api/BlogPosts/' + numberToGet)
 			.then(function (result) {
 				$scope.blogPosts = result.data;
-				console.log(JSON.stringify($scope.blogPosts));
 				$scope.waitingForData = false;
 			})
 			.catch(function (response) {
