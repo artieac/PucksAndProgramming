@@ -19,6 +19,14 @@ namespace PucksAndProgramming.MainSite
             }
         }
 
+        public static string RadarUrlRoot
+        {
+            get
+            {
+                return System.Configuration.ConfigurationManager.AppSettings["radarSource"];
+            }
+        }
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();

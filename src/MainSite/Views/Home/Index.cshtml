@@ -10,6 +10,7 @@
 	<script src="@Url.Content("~/Scripts/Services/BlogPostService.js")" type="text/javascript"></script>
 	<script src="@Url.Content("~/Scripts/Controllers/BlogPostController.js")" type="text/javascript"></script>
 	<script src="@Url.Content("~/Scripts/Controllers/TwitterController.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/Controllers/RadarController.js")" type="text/javascript"></script>
 }
 
 <div id="header" class="header">
@@ -21,6 +22,8 @@
 			<a href="#my-story" class="nav-link">About me</a>
 			<a href="#personalprojects" class="nav-link">Personal Projects</a>
 			<a href="#online" class="nav-link">Recent Blog Entries</a>
+			<a href="http://technologyradar.pucksandprogramming.com/public/home/user/1/radartype/1/radars?mostrecent=true" class="nav-link">My Technology Radar</a>
+			<a href="http://technologyradar.pucksandprogramming.com/public/home/user/1/radartype/2/radars?mostrecent=true" class="nav-link">My Disney Radar</a>
 		</div>
 	</div>
 </div>
@@ -48,26 +51,45 @@
 			</div>
 			<div class="w-col w-col-8">
 				<div class="w-row">
-					<div class="w-col w-col-4">
-						<a href="http://blog.alwaysmoveforward.com" class="journal-entry w-inline-block">
+					<div class="w-col w-col-12">
+						<div class="white-box">
+							<h3>My Radars</h3>
+							<p>My personal Radars. The site also lets you manage your own Radar once you&#x27;ve logged in with Auth0. I started with a Technology Radar but since then I've evolved it to allow a user to define their own Radar types.  I wrote this with Java, Spring Boot, React, and Docker.</p>
+							<div class="w-row">
+								<div class="w-col w-col-6">
+									<a href="http://technologyradar.pucksandprogramming.com/public/home/user/1/radartype/1/radars?mostrecent=true" class="journal-entry w-inline-block">
+										<div class="white-box">
+											<img src="/Content/images/noun_Radar_9219.png" srcset="/Content/images/noun_Radar_9219-p-500.png 500w, /Content/images/noun_Radar_9219.png 700w" sizes="(max-width: 479px) 27vw, (max-width: 767px) 19vw, (max-width: 991px) 8vw, 61.125px" alt="" class="grid-image">
+											<h3>Technology Radar</h3>
+											<p>This is my Technology Radar.  The one that started everything.  It's my own personal instance of Thoughtwork's original radar.</p>
+										</div>
+									</a>
+								</div>
+								<div class="w-col w-col-6">
+									<a href="http://technologyradar.pucksandprogramming.com/public/home/user/1/radartype/2/radars?mostrecent=true" class="journal-entry w-inline-block">
+										<div class="white-box">
+											<img src="/Content/images/noun_Radar_9219.png" srcset="/Content/images/noun_Radar_9219-p-500.png 500w, /Content/images/noun_Radar_9219.png 700w" sizes="(max-width: 479px) 27vw, (max-width: 767px) 19vw, (max-width: 991px) 8vw, 61.125px" alt="" class="grid-image">
+											<h3>Disney Radar</h3>
+											<p>This is my Disney radar.  As I worked on the Technology one I realized there were other things I wanted to rate, and Disney was the top of the list.</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				<div class="w-row">
+					<div class="w-col w-col-6">
+						<a href="http://blog.pucksandprogramming.com" class="journal-entry w-inline-block">
 							<div class="white-box">
-								<img src="/Content/images/noun_Radar_9219.png" srcset="/Content/images/noun_Radar_9219-p-500.png 500w, /Content/images/noun_Radar_9219.png 700w" sizes="(max-width: 479px) 27vw, (max-width: 767px) 19vw, (max-width: 991px) 8vw, 61.125px" alt="" class="grid-image">
+								<img src="/Content/images/noun_Blog_1563318.png" srcset="/Content/images/noun_Blog_1563318.png 500w, /Content/images/noun_Blog_1563318.png 700w" alt="" sizes="(max-width: 479px) 27vw, (max-width: 767px) 19vw, (max-width: 991px) 8vw, 61.125px" alt="" class="grid-image">
 								<h3>Blog</h3>
 								<p>Here I blog about anything on the topics from Programming to Hockey to Disney. I wrote the blog software myself using  C#, .Net, MVC, and Angular. </p>
 							</div>
 						</a>
 					</div>
-					<div class="w-col w-col-4">
-						<a href="http://technologyradar.pucksandprogramming.com"  class="journal-entry w-inline-block">
-							<div class="white-box">
-								<img src="/Content/images/noun_Radar_9219.png" srcset="/Content/images/noun_Radar_9219-p-500.png 500w, /Content/images/noun_Radar_9219.png 700w" sizes="(max-width: 479px) 27vw, (max-width: 767px) 19vw, (max-width: 991px) 8vw, 61.125px" alt="" class="grid-image">
-								<h3>Your Technology Radar</h3>
-								<p>My personal Technology Radar. The site also lets you manage your own personal Technology Radar once you&#x27;ve logged in with Auth0. I wrote this with Java, Spring Boot, React and Docker.</p>
-							</div>
-						</a>
-					</div>
-					<div class="w-col w-col-4">
-						<a href="http://pointchart.alwaysmoveforward.com"  class="journal-entry w-inline-block">
+					<div class="w-col w-col-6">
+						<a href="http://pointchart.pucksandprogramming.com" class="journal-entry w-inline-block">
 							<div class="white-box">
 								<img src="https://uploads-ssl.webflow.com/5ab4147a43dc64b2180c31f3/5ab4147a43dc6406fc0c3206_social-01-white.svg" alt="" class="grid-image">
 								<h3>Point Chart</h3>
@@ -81,7 +103,7 @@
 	</div>
 </div>
 <div id="online" class="section">
-	<div class="w-container" ng-controller="BlogPostController" ng-init="getMostRecent('@PucksAndProgramming.MainSite.MvcApplication.BlogUrlRoot', 4)">
+	<div class="w-container" ng-controller="BlogPostController" ng-init="getMostRecent('@PucksAndProgramming.MainSite.MvcApplication.BlogUrlRoot', 2)">
 		<div class="w-row">
 			<div class="align-right w-col w-col-4">
 				<h2>Recent Blog Entries</h2>
