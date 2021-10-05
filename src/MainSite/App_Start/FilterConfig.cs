@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace PucksAndProgramming.MainSite
+namespace AlwaysMoveForward.MainSite
 {
     public class FilterConfig
     {

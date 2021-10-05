@@ -1,4 +1,4 @@
-﻿@model PucksAndProgramming.MainSite.Models.CarouselModel
+﻿@model AlwaysMoveForward.MainSite.Models.CarouselModel
 @{
 	Layout = "~/Views/Shared/_Layout.cshtml";
 	ViewBag.CarouselModel = Model;
@@ -22,8 +22,8 @@
 			<a href="#my-story" class="nav-link">About me</a>
 			<a href="#personalprojects" class="nav-link">Personal Projects</a>
 			<a href="#online" class="nav-link">Recent Blog Entries</a>
-			<a href="http://technologyradar.pucksandprogramming.com/public/home/user/1/radartype/1/radars?mostrecent=true" class="nav-link">My Technology Radar</a>
-			<a href="http://technologyradar.pucksandprogramming.com/public/home/user/1/radartype/2/radars?mostrecent=true" class="nav-link">My Disney Radar</a>
+			<a href="@System.Configuration.ConfigurationManager.AppSettings["radarSource"]/public/home/user/1/radartype/e9b8779a-3452-47b9-ab49-600162eace3c/radars?mostrecent=true" class="nav-link">My Technology Radar</a>
+			<a href="@System.Configuration.ConfigurationManager.AppSettings["radarSource"]/public/home/user/1/radartype/a2330b55-164a-49a0-a883-56d46c34a399/radars?mostrecent=true" class="nav-link">My Disney Radar</a>
 		</div>
 	</div>
 </div>
@@ -57,7 +57,7 @@
 							<p>My personal Radars. The site also lets you manage your own Radar once you&#x27;ve logged in with Auth0. I started with a Technology Radar but since then I've evolved it to allow a user to define their own Radar types.  I wrote this with Java, Spring Boot, React, and Docker.</p>
 							<div class="w-row">
 								<div class="w-col w-col-6">
-									<a href="http://technologyradar.pucksandprogramming.com/public/home/user/1/radartype/1/radars?mostrecent=true" class="journal-entry w-inline-block">
+									<a href="@System.Configuration.ConfigurationManager.AppSettings["radarSource"]/public/home/user/1/radars" class="journal-entry w-inline-block">
 										<div class="white-box">
 											<img src="/Content/images/noun_Radar_9219.png" srcset="/Content/images/noun_Radar_9219-p-500.png 500w, /Content/images/noun_Radar_9219.png 700w" sizes="(max-width: 479px) 27vw, (max-width: 767px) 19vw, (max-width: 991px) 8vw, 61.125px" alt="" class="grid-image">
 											<h3>Technology Radar</h3>
@@ -66,7 +66,7 @@
 									</a>
 								</div>
 								<div class="w-col w-col-6">
-									<a href="http://technologyradar.pucksandprogramming.com/public/home/user/1/radartype/2/radars?mostrecent=true" class="journal-entry w-inline-block">
+									<a href="@System.Configuration.ConfigurationManager.AppSettings["radarSource"]/public/home/user/1/radars" class="journal-entry w-inline-block">
 										<div class="white-box">
 											<img src="/Content/images/noun_Radar_9219.png" srcset="/Content/images/noun_Radar_9219-p-500.png 500w, /Content/images/noun_Radar_9219.png 700w" sizes="(max-width: 479px) 27vw, (max-width: 767px) 19vw, (max-width: 991px) 8vw, 61.125px" alt="" class="grid-image">
 											<h3>Disney Radar</h3>
@@ -80,7 +80,7 @@
 					</div>
 				<div class="w-row">
 					<div class="w-col w-col-6">
-						<a href="http://blog.pucksandprogramming.com" class="journal-entry w-inline-block">
+						<a href="@System.Configuration.ConfigurationManager.AppSettings["blogSource"]" class="journal-entry w-inline-block">
 							<div class="white-box">
 								<img src="/Content/images/noun_Blog_1563318.png" srcset="/Content/images/noun_Blog_1563318.png 500w, /Content/images/noun_Blog_1563318.png 700w" alt="" sizes="(max-width: 479px) 27vw, (max-width: 767px) 19vw, (max-width: 991px) 8vw, 61.125px" alt="" class="grid-image">
 								<h3>Blog</h3>
@@ -89,7 +89,7 @@
 						</a>
 					</div>
 					<div class="w-col w-col-6">
-						<a href="http://pointchart.pucksandprogramming.com" class="journal-entry w-inline-block">
+						<a href="https://pointchart.AlwaysMoveForward.com" class="journal-entry w-inline-block">
 							<div class="white-box">
 								<img src="https://uploads-ssl.webflow.com/5ab4147a43dc64b2180c31f3/5ab4147a43dc6406fc0c3206_social-01-white.svg" alt="" class="grid-image">
 								<h3>Point Chart</h3>
@@ -103,7 +103,7 @@
 	</div>
 </div>
 <div id="online" class="section">
-	<div class="w-container" ng-controller="BlogPostController" ng-init="getMostRecent('@PucksAndProgramming.MainSite.MvcApplication.BlogUrlRoot', 2)">
+	<div class="w-container" ng-controller="BlogPostController" ng-init="getMostRecent('@AlwaysMoveForward.MainSite.MvcApplication.BlogUrlRoot', 2)">
 		<div class="w-row">
 			<div class="align-right w-col w-col-4">
 				<h2>Recent Blog Entries</h2>

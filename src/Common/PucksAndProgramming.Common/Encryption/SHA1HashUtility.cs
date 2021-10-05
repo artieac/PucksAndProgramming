@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace PucksAndProgramming.Common.Encryption
+namespace AlwaysMoveForward.Common.Encryption
 {
     /// <summary>
     /// Salted password hashing with PBKDF2-SHA1.

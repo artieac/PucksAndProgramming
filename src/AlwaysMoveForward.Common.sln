@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PucksAndProgrammingCommon.DataLayer.NHibernate", "Common\DataLayer.NHibernate\PucksAndProgrammingCommon.DataLayer.NHibernate.csproj", "{F9803443-3ED7-4FB4-B758-5D3419983163}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlwaysMoveForwardCommon.DataLayer.NHibernate", "Common\DataLayer.NHibernate\AlwaysMoveForwardCommon.DataLayer.NHibernate.csproj", "{F9803443-3ED7-4FB4-B758-5D3419983163}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PucksAndProgrammingCommon.Tools.EncryptionUtility", "Common\Tools\EncryptionUtility\PucksAndProgrammingCommon.Tools.EncryptionUtility.csproj", "{B08E997D-6C92-414E-A4DE-31D80AA2C718}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlwaysMoveForwardCommon.Tools.EncryptionUtility", "Common\Tools\EncryptionUtility\AlwaysMoveForwardCommon.Tools.EncryptionUtility.csproj", "{B08E997D-6C92-414E-A4DE-31D80AA2C718}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PucksAndProgramming.MainSite", "MainSite\PucksAndProgramming.MainSite.csproj", "{AC07908D-D7FA-49CF-A229-6A6675A3CD13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlwaysMoveForward.MainSite", "MainSite\AlwaysMoveForward.MainSite.csproj", "{AC07908D-D7FA-49CF-A229-6A6675A3CD13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PucksAndProgramming.Common", "Common\PucksAndProgramming.Common\PucksAndProgramming.Common.csproj", "{600387A0-6903-47FD-AA6C-9ADF4CFE491E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlwaysMoveForwardCommon", "Common\PucksAndProgramming.Common\AlwaysMoveForwardCommon.csproj", "{600387A0-6903-47FD-AA6C-9ADF4CFE491E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using AutoMapper;
 
-namespace PucksAndProgramming.Common.DataLayer
+namespace AlwaysMoveForward.Common.DataLayer
 {
     public abstract class MappedListResolver<
         TDomainListItem, 
